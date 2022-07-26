@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-Commercial</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html">E-Commercial</a>
+            <span onclick="togleNavbar()">&#9776;</span>
+        </div>
+        <div class="menu">
+            <a href="/productCart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a >
+                <i class="fa-solid fa-user"></i>
+                <span id="username"></span>
+            </a>
+            <a onclick="logout();">Logout</a>
+        </div>
+    </nav>
+    <main class="banner">
+        <div class="banner-container">
+            <div class="banner-content">
+                <h1>Lowest Prices Best Quality Shopping</h1>
+                <div>
+                    <span>Free Delivery |</span>
+                    <span>Cash on Delivery |</span>
+                    <span>Easy Returns</span>
+                </div>
+                <button>View All Product</button>
+            </div>
+            <div>
+                <img src="assets/images/banner2.jpg" />
+            </div>
+        </div>
+    </main>
+    <section class="search-box">
+        <input type="search" placeholder="Search..." autocomplete="off" autocomplete id="search-box"/> 
+        <button  id="search">Search</button>
+    </section>
+    <section class="all-product">
+        <div class="product-container">
+            <!-- <div class="product-card">
+                <div class="product-image">
+                    <img src="./assets/images/banner.jpg" alt="no-images" />
+                </div>
+                <div class="product-title">
+                    <p>title</p>
+                    <p>Price</p>
+                </div>
+            </div> -->
+            
+        </div>
+    </section>
+    <section class="footer-title">
+            <label>E-Shopping</label>
+            <a href="https://www.linkedin.com/in/deepu-kumar-61606a1b9"><i class="fa-brands fa-linkedin"></i></a>
+    </section>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>
