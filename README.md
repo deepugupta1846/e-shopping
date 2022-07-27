@@ -4,6 +4,7 @@ A simulation of client side e-commerce website with feature as user can login, s
 It is fully responsive website design. The site is developed using HTML , CSS and JavaScript.
 
 Code URL: https://github.com/deepugupta1846/e-shopping
+
 Live URL: https://whimsical-crostata-00733a.netlify.app/login.html
 
 ## Signup 
