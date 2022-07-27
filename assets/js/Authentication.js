@@ -91,21 +91,21 @@ const validateForm = (...form) => {
                     else
                     {
                         field.style.border="1px solid red";
-                        document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains a combination of lowercase letter and number are required.";
+                        document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains without space. all characters should be in lowercase letter and number are required.";
                         document.querySelector('.login-label').style.color = "red";
                         return false;
                     }
                 }else
                 {
                     field.style.border="1px solid red";
-                    document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains a combination of lowercase letter and number are required.";
+                    document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains without space. all characters should be in lowercase letter and number are required.";
                     document.querySelector('.login-label').style.color = "red";
                     return false;
                 }
             }else
             {
                 field.style.border="1px solid red";
-                document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains a combination of lowercase letter and number are required.";
+                document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains without space. all characters should be in lowercase letter and number are required.";
                 document.querySelector('.login-label').style.color = "red";
                 return false;
             }
@@ -118,6 +118,7 @@ const validateForm = (...form) => {
                     return false;
                 }else
                 {
+                    document.querySelector('.login-label').innerHTML = "";
                     document.querySelector('.login-label').style.color = 'green';
                 }
             }
@@ -134,7 +135,7 @@ const validateForm = (...form) => {
             else
             { 
                 field.style.border="1px solid red";
-                document.querySelector('.login-label').innerHTML = "A minimum 8 characters password contains a combination of uppercase and lowercase letter and number are required.";
+                document.querySelector('.login-label').innerHTML = "A minimum 8 characters password contains a combination of uppercase and lowercase letter and number & symboll are required.";
                 document.querySelector('.login-label').style.color = "red";
                 return false;
             }
