@@ -50,7 +50,7 @@ console.log(productid);
     })
     .catch(err=>console.log(err))
 })();
-const existsData = JSON.parse(localStorage.getItem(username));
+const existsData = JSON.parse(localStorage.getItem(username)) || [];
 if(existsData == null){
     const arr = [];
     localStorage.setItem(username, JSON.stringify(arr));

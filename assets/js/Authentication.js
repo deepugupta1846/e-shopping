@@ -34,7 +34,7 @@ const showSignupPage = () => {
 // }
 
 
-const existsData = JSON.parse(localStorage.getItem("userData"));
+const existsData = JSON.parse(localStorage.getItem("userData")) || [];
 if(existsData == null){
     const arr = [];
     localStorage.setItem("userData", JSON.stringify(arr));
@@ -62,7 +62,7 @@ document.querySelector("#signup_button").addEventListener('click', (e) => {
         document.querySelector('.login-label').innerHTML = "user added successfully...";
         document.querySelector('.login-label').style.color = 'green';
     }
-    console.log(userData);
+    
 });
 
 
@@ -71,6 +71,7 @@ const validateForm = (...form) => {
     //console.log(form);
     var paswd =  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
     let password = "";
+    var error_msg=document.querySelector("#error-msg");
     for(let field of form){
         
         if(field.value == "")
@@ -84,14 +85,28 @@ const validateForm = (...form) => {
                 if(field.value.length>=8)
                 {
                     
-                    field.style.border="1px solid green";
+                    if(field.value == field.value.toLowerCase()){
+                        field.style.border="1px solid green";
+                    }
+                    else
+                    {
+                        field.style.border="1px solid red";
+                        document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains a combination of lowercase letter and number are required.";
+                        document.querySelector('.login-label').style.color = "red";
+                        return false;
+                    }
                 }else
                 {
                     field.style.border="1px solid red";
+                    document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains a combination of lowercase letter and number are required.";
+                    document.querySelector('.login-label').style.color = "red";
+                    return false;
                 }
             }else
             {
                 field.style.border="1px solid red";
+                document.querySelector('.login-label').innerHTML = "A minimum 8 characters username contains a combination of lowercase letter and number are required.";
+                document.querySelector('.login-label').style.color = "red";
                 return false;
             }
             for(let d of existsData){
@@ -119,6 +134,8 @@ const validateForm = (...form) => {
             else
             { 
                 field.style.border="1px solid red";
+                document.querySelector('.login-label').innerHTML = "A minimum 8 characters password contains a combination of uppercase and lowercase letter and number are required.";
+                document.querySelector('.login-label').style.color = "red";
                 return false;
             }
         }
