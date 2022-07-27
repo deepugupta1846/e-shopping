@@ -6,4 +6,5 @@ It is fully responsive website design. The site is developed using HTML , CSS an
 Code URL: https://github.com/deepugupta1846/e-shopping
 Live URL: https://whimsical-crostata-00733a.netlify.app/login.html
 
-| Signup | [- user will fill all given field and all data stored in local storage] |
+## Signup 
+ user will fill all given field and all data stored in local storage.
