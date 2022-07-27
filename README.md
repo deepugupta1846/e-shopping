@@ -8,7 +8,7 @@ Code URL: https://github.com/deepugupta1846/e-shopping
 
 Live URL: https://whimsical-crostata-00733a.netlify.app/login.html
 
-All Product API URL: https://fakestoreapi.com/products
+All Products API URL: https://fakestoreapi.com/products
 
 ## Signup page
  user will fill all given fields. all fields are mandatory and data stored in local storage.
