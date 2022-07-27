@@ -1,6 +1,6 @@
 # e-shopping
 
-A simulation of client side e-commerce website with feature as user can login, search item, show details of item and add to cart.
+A simulation of client side e-commerce website with feature as Authentication, search item, show details of item and add to cart.
 
 It is fully responsive website design. The site is developed using HTML , CSS and JavaScript.
 
