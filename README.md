@@ -26,4 +26,7 @@ if username and password are correct than redirect to home page.
 ![Screenshot (96)](https://user-images.githubusercontent.com/69181889/181350952-39dfe982-15d9-431e-bb0d-6122e20c0acd.png)
 
 ## Product Details
+![Screenshot (98)](https://user-images.githubusercontent.com/69181889/181352092-02f898b7-845e-4c54-9770-978229619f7e.png)
 
+## cart item
+![Screenshot (99)](https://user-images.githubusercontent.com/69181889/181352355-3be14029-7320-48e3-b83a-9b1a6ac5e523.png)
