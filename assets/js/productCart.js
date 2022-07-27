@@ -53,7 +53,7 @@ var product_container = document.querySelector(".product-container");
 
 console.log(existsData);
 const deleteCartProduct = (id) => {
-    alert(id);
+    
     console.log(existsData);
     for(let i = 0; i < existsData.length; i++) {
         console.log(existsData[i]);
@@ -63,6 +63,7 @@ const deleteCartProduct = (id) => {
     }
     localStorage.setItem(`${username}`,JSON.stringify(existsData));
     console.log(existsData);
+    alert("Item removed from cart..");
     location.reload();
 }
 const logout = () => {
